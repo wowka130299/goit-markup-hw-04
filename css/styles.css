@@ -48,7 +48,9 @@ ul {
     display: flex;
     align-items: center;
     padding: 0;
-
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08) ;
 }
 
 
@@ -142,6 +144,7 @@ letter-spacing: 0.32px;
 .list-element-studio a{
     display: block;
     position: relative;
+    
 }
 
 .list-element-studio a::after{
@@ -155,11 +158,12 @@ letter-spacing: 0.32px;
     border-radius: 2px;
     background: #fff;
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: -1px;
+    color: #404bbf;
 }
 
 .list-element-studio a:active::after {  
-    background: var(--OCEAN, #404BBF);
+    background-color: var(--OCEAN, #404BBF);
 }
 
 .ad-info{
@@ -204,15 +208,11 @@ letter-spacing: 0.32px;
     background: var(--NAVY-BLUE, #2E2F42);
    padding: 188px 0;
    display: flex;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-    ), url(/images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office\ 1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size:cover;
-   
-
+    background-position: center;
 
 }
 
@@ -231,7 +231,7 @@ letter-spacing: 0.32px;
     margin-bottom: 48px;
 }
 
-.container .butt{  color:  #FFF;
+.butt{  color:  #FFF;
 font-family: "Roboto", sans-serif ;
 font-size: 16px;
 font-style: normal;
@@ -249,8 +249,8 @@ margin-left: 164px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container .butt:hover,
-.container .butt:focus{
+.butt:hover,
+ .butt:focus{
     color: #FFF;
 font-size: 16px;
 font-style: normal;
@@ -273,6 +273,8 @@ cursor:pointer;
         background: var(--CLOUD, #F4F4FD);
         margin-bottom: 8px;
         padding: 24px 100px;
+        align-items: center;
+        height: 112px;
 }
 
 
@@ -345,10 +347,11 @@ letter-spacing: 0.32px;
     display: flex;
     gap: 24px;
     margin: 0; 
+    justify-content: center;
 }
 
 .icon-team{
-    background-color:#4D5AE5;
+    fill:#f4f4fd ;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
 }
@@ -525,6 +528,11 @@ letter-spacing: 0.32px;
 padding: 40px 32px 164px;
 }
 
+.elements-list-portfolio:hover .overlay-text{
+    transform: translateX(0);
+}
+
+
 .elements-list-portfolio:hover .overlay{
     transform: translateX(0);
 }
@@ -674,5 +682,9 @@ display: inline-block;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.32px;
-    margin-bottom: 17.5px;
+    margin-bottom: 16px;
+}
+
+.logo-container{
+    margin-right: 120px
 }
