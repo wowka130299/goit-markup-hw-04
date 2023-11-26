@@ -595,7 +595,11 @@ background: var(--WHITE, #FFF);
 
 /*FOOTER*/
 
-
+.footer-container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
 
 .footer-name {
     background: var(--NAVY-BLUE, #2E2F42);
@@ -608,6 +612,10 @@ background: var(--WHITE, #FFF);
     padding-left: 0;
     padding: 100px 0;
 }
+.logo-container {
+    margin-right: 120px
+}
+
 
 .logo-down {
 color: #4D5AE5;
@@ -668,9 +676,7 @@ display: inline-block;
     background-color: var(--GREEN, #31D0AA);
 }
 
-.footer-container{
-    position: relative;
-}
+
 
 .title-social-media{
     color: var(--WHITE, #FFF);
@@ -685,6 +691,7 @@ display: inline-block;
     margin-bottom: 16px;
 }
 
-.logo-container{
-    margin-right: 120px
+
+.link-list-team{
+    gap: 16px;
 }
