@@ -466,7 +466,7 @@ margin-bottom: 8px;
 
 
 
-/*SECTION 4*/
+/*SECTION potrfolio*/
 
 
 
@@ -646,7 +646,7 @@ display: inline-block;
 
 
 
-.info-in-footer {
+/*.info-in-footer*/ .logo-container>.text {
     color: #F4F4FD;
     font-family: Roboto;
     font-size: 16px;
@@ -657,7 +657,7 @@ display: inline-block;
     width: 264px;
 }
 
-.social-media{
+.footer-container>.social-media{
     position: absolute;
     top: 0;
     display: flex;
@@ -667,7 +667,7 @@ display: inline-block;
 }
 
 
-.title-social-media{
+.social-media>.text{
     color: var(--WHITE, #FFF);
     
         /* Body Medium */
