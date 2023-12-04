@@ -100,7 +100,7 @@ color: var(--dark);
 }
 
 .site-nav .studio{
-    color: inherit;
+color: #404bbf;
 }
 
 .site-nav .studio::after{
