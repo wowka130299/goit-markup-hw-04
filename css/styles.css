@@ -655,7 +655,7 @@ display: inline-block;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-right: 120px;
+    
 }
 
 .footer-container>.social-media{
@@ -696,4 +696,8 @@ display: inline-block;
 
 .icon{
     fill:#f4f4fd ;
+}
+
+.logo-container {
+    margin-right: 120px;
 }
