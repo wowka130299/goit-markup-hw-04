@@ -73,7 +73,7 @@ color: var(--dark);
 .nav-menu{
     display: flex;
     align-items: center;
-    padding: 24px 0;
+    
 }
 
 
@@ -93,26 +93,27 @@ color: var(--dark);
 
 /*studio link style*/
 
+.site-nav .link {
+    padding: 24px 0;
+}
 
-
-.site-nav .studio{
+.link.active {
     position: relative;
     color: #404bbf;
+    display: block;
 }
 
 
 
-.site-nav .studio::after{
+.link.active::after{
     position: absolute;
-    display: inline-block;
     content: "";
-    width: 48px;
+    width: 100%;
     border-radius: 2px;
-    background: var(--OCEAN, #404BBF);
-    bottom:-1px ;
+    background-color:  #404BBF;
+    bottom:-1px;
     height: 4px;
     left: 0;
-    top: 43px;
 }
 
 .logo-header{
